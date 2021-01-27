@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+# Node (PATH is changed before load NVM)
 export NVM_DIR=~/.nvm
 NODE_DIR=$NVM_DIR/versions/node
 NODE_LATEST=($(ls $NODE_DIR))
@@ -83,13 +84,13 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+FD_DEFAULT_COMMAND="fd -HL --ignore-file ~/.config/git/ignore"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+# if [[ -n $SSH_CONNECTION ]]; then #   export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -107,18 +108,20 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias b=bat
 alias c=clear
-alias fd="fd -HL --ignore-file ~/.config/git/ignore"
+alias fd=$FD_DEFAULT_COMMAND
 alias g=git
 alias ls="lsd -A --group-dirs first"
-alias ll="lsd -lA --group-dirs first"
-alias v="/usr/local/opt/vim/bin/vim"
+alias ll="ls -l"
+alias tree="ls -I '.git' -I 'node_modules' --tree"
+alias v="vim"
 alias V="sudo vim"
 alias vf=vifm
 alias y=yarn
 
-export FZF_DEFAULT_COMMAND="fd -HL --ignore-file ~/.config/git/ignore"
+# FZF
+export FZF_DEFAULT_COMMAND=$FD_DEFAULT_COMMAND
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
-export FZF_ALT_C_COMMAND="fd -t d -HL --ignore-file ~/.config/git/ignore"
+export FZF_ALT_C_COMMAND=$FD_DEFAULT_COMMAND" -t d"
 export FZF_COMPLETION_TRIGGER="'"
 source ~/.fzf.zsh
 
