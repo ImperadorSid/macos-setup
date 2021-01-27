@@ -1,0 +1,10 @@
+bat
+coreutils
+fd
+fzf
+imagemagick
+lsd
+ripgrep
+telnet
+vifm
+vim

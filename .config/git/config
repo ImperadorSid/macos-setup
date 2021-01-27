@@ -1,0 +1,29 @@
+[user]
+	name = Moisés Carvalho
+	email = moisescarv27@hotmail.com
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	a = add
+	b = branch
+	c = commit
+	cfg = config
+	ch = checkout
+	cl = clone
+	cn = clean
+	d = diff
+	i = init
+	l = log
+	ls = ls-tree -r --name-only
+	p = push
+	pl = pull
+	r = reset --hard
+	rs = restore
+	rt = remote
+	s = status -s
+	ss = stash
+	st = status
+	f = fetch
+	rv = revert

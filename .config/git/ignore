@@ -1,0 +1,27 @@
+**/*.app/Contents/
+Application Support/
+Applications/
+ApplicationSupport/
+.android/
+.android-sdk/
+.[cC]ache/
+[cC]ache?/
+.cocoapods/
+.DS_Store
+.git/
+.github/
+.gradle/
+Library/
+.localized
+Movies/
+Music/
+node_modules/
+.npm/
+.nvm/
+.oh-my-zsh/
+Pictures/
+Public/
+.vim/pack/
+.vscode/
+yarn.lock
+.zsh_sessions/
