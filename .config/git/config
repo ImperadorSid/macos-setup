@@ -25,5 +25,6 @@
 	s = status -s
 	ss = stash
 	st = status
+        sw = switch
 	f = fetch
 	rv = revert
