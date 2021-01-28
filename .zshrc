@@ -1,13 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Node (PATH is changed before load NVM)
-export NVM_DIR=~/.nvm
-NODE_DIR=$NVM_DIR/versions/node
-NODE_LATEST=($(ls $NODE_DIR))
-
-export PATH=$NODE_DIR/${NODE_LATEST[-1]}/bin:$PATH
-
-source $NVM_DIR/nvm.sh
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/impsid/.oh-my-zsh"
@@ -77,7 +70,11 @@ ZSH_THEME="spaceship"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fast-syntax-highlighting zsh-autosuggestions zsh-completions)
+# NVM
+export NVM_LAZY_LOAD=true
+
+
+plugins=(git zsh-nvm fast-syntax-highlighting zsh-autosuggestions zsh-completions)
 
 source $ZSH/oh-my-zsh.sh
 

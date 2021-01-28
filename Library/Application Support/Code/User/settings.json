@@ -1,0 +1,22 @@
+{
+    "workbench.startupEditor": "none",
+    "editor.fontSize": 16,
+    "debug.console.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "files.autoSave": "onFocusChange",
+    "files.enableTrash": false,
+    "editor.minimap.enabled": false,
+    "remote.SSH.remoteServerListenOnSocket": true,
+    "remote.SSH.remotePlatform": {
+        "vps": "linux"
+    },
+    "explorer.compactFolders": false,
+    "files.hotExit": "off",
+    "git.autofetch": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "One Monokai",
+    "editor.tabSize": 2,
+    "workbench.editor.tabCloseButton": "off"
+}
